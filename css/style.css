@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: coral;
+}
+
+.container {
+    columns: 3;
+}
+
+.image-holder {
+    display: block;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: all 0.6s ease;
+}
+
+.image-holder:hover {
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+.image-holder img {
+    width: 100%;
+    filter: grayscale(100%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-holder img:hover {
+    filter: grayscale(0);
+}
